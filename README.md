@@ -70,6 +70,10 @@ PnL p05/p50/p95: -263 / 205 / 1705
 Avg spread capture (ticks): 3.10
 Avg adverse selection (ticks): 3.13
 
+Price Levels: HashMap[price] → FIFO queue of orders
+Best Bid/Ask Access: Maintained in O(1)
+Matching Complexity: O(n) per aggressive order
+
 
 This demonstrates how thin edge strategies can produce positive expectation with high variance under certain order flow assumptions.
 Possible Extensions
